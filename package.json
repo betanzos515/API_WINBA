@@ -1,0 +1,41 @@
+{
+  "name": "glwinba_api",
+  "version": "1.0.0",
+  "description": "GLWINBA API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rgonzalezGL/GLWINBA_API.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "jwt",
+    "authentication",
+    "mssql"
+  ],
+  "author": "rgonzalezGL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rgonzalezGL/GLWINBA_API/issues"
+  },
+  "homepage": "https://github.com/rgonzalezGL/GLWINBA_API#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^8.0.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.16.1",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
