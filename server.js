@@ -1,10 +1,16 @@
-require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const app = express();
 const db = require( "./app/models" );
-const Role = db.role;
+const dotenv = require('dotenv');
+const Role = require('./app/models/role.model');
 
+async function getRoles(){
+  return Role;
+}
+
+console.log(getRoles());
+/* dotenv.config();
 db.sequelize.sync({force: true}).then(() => {
   console.log('Drop and Resync Database');
   initial();
@@ -31,9 +37,10 @@ function initial() {
     name: "tester"
   });
 }
+ */
 
 db.sequelize
-  .sync({ force: true })
+  .sync()
   .then(( result ) => {
     console.log("Sequalize Database Sync");
   })
